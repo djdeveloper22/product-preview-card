@@ -17,7 +17,7 @@
     }
 
     body {
-      background-color: #f3e5d8ff;
+      background-color: #f3ebe4ff;
     }
 
     .montserrat-title {
@@ -72,7 +72,7 @@
       color: white;
       font-family: "Fraunces", serif;
       font-optical-sizing: auto;
-      font-weight: 500;
+      font-weight: 700;
       font-style: normal;
       font-variation-settings:
         "SOFT" 0,
@@ -81,7 +81,7 @@
       border-radius: 0.3rem;
       border: none;
       width: 100%;
-      padding: 0.7rem;
+      padding: 1rem;
     }
 
     .mb-start-0-5 {
@@ -108,7 +108,7 @@
     .card {
       width: 100%;
       min-width: 320px;
-      max-width: 400px;
+      max-width: 370px;
       background-color: white;
       border-radius: 1rem;
     }
@@ -119,6 +119,14 @@
 
     figure {
       width: inherit;
+      height: 310px;
+      background-image: url('images/image-product-desktop.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: fill;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
     }
 
     img {
@@ -156,8 +164,12 @@
       }
 
       figure {
-        width: 300px;
-        
+        width: 1000px;
+        height: auto;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
       }
 
       img {
@@ -169,6 +181,10 @@
 
       section {
         width: auto;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        justify-content: space-around;
         padding-inline: 1.6rem !important;
       }
     }
@@ -179,7 +195,7 @@
   <main>
     <div class="card pb-end-0-4">
       <figure>
-        <img src="images/image-product-mobile.jpg" alt="perfume">
+        <!-- <img src="images/image-product-mobile.jpg" alt="perfume"> -->
       </figure>
       <section>
         <small class="fraunces-small">perfume</small>
