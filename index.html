@@ -29,6 +29,15 @@
       font-size: 2rem;
     }
 
+    .fraunces-title {
+      font-family: "Fraunces", serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      text-transform: capitalize;
+      font-size: 2rem;
+    }
+
     .montserrat-price-old {
       font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
@@ -37,20 +46,21 @@
       text-decoration: line-through;
     }
 
-    .fraunces-small {
+    .montserrat-small {
       font-size: 1rem;
+      letter-spacing: 0.2rem;
       text-transform: uppercase;
-      font-family: "Fraunces", serif;
+      font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
       font-variation-settings:
         "SOFT" 0,
         "WONK" 0;
     }
 
-    .fraunces-text {
-      font-family: "Fraunces", serif;
+    .montserrat-text {
+      font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
       font-weight: 300;
       font-style: normal;
@@ -68,17 +78,21 @@
       color: #42826aff;
     }
 
-    .fraunces-button-card {
+    .montserrat-button-card {
       color: white;
-      font-family: "Fraunces", serif;
+      font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 700;
+      font-weight: 800;
       font-style: normal;
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
       font-variation-settings:
         "SOFT" 0,
         "WONK" 0;
       background-color: #3d8168ff;
-      border-radius: 0.3rem;
+      border-radius: 0.5rem;
       border: none;
       width: 100%;
       padding: 1rem;
@@ -195,18 +209,17 @@
   <main>
     <div class="card pb-end-0-4">
       <figure>
-        <!-- <img src="images/image-product-mobile.jpg" alt="perfume"> -->
       </figure>
       <section>
-        <small class="fraunces-small">perfume</small>
-        <h1 class="montserrat-title mb-start-0-5">gabrielle essence eau de parfum</h1>
-        <p class="fraunces-text mb-start-1">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        <small class="montserrat-small">perfume</small>
+        <h1 class="fraunces-title mb-start-0-5">gabrielle essence eau de parfum</h1>
+        <p class="montserrat-text mb-start-1">A floral, solar and voluptuous interpretation composed by Olivier Polge,
           Perfumer-Creator for the House of CHANEL.</p>
         <div class="group-price mb-start-1">
           <span class="fraunces-price">$149.99</span>
           <small class="montserrat-price-old">$169.99</small>
         </div>
-        <button class="fraunces-button-card mb-start-1"> <i class="bi bi-cart"></i> Add to Cart</button>
+        <button class="montserrat-button-card mb-start-1"> <i class="bi bi-cart"></i> Add to Cart</button>
       </section>
     </div>
     <div class="attribution">
